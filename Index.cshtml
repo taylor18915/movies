@@ -1,0 +1,39 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Taylors movies";
+}
+
+<div class="text-center">
+    <section>
+        <h1 class=" display-1">  My favorite movies</h1>
+        <p class="align-text-bottom "> My favorite movie is very funny</p>
+    </section>
+        <section>
+            <style>
+                body {
+                    background-color:mediumpurple
+                }
+            </style>
+        <p style="background-color":hotpink;> this movie was in 2004 and was very funny</p>
+            <img style="height": src="https://static.tvgcdn.net/feed/1/769/thumbs/12186769_1300x1733.jpg" width="200" height="200" />
+        <p> made on febuary 24,2006</p>
+            <h2>The best one</h2>
+            <p> made april,22,2011</p>
+            <p> rated pg-13</p>
+            <img src="https://images-na.ssl-images-amazon.com/images/I/91kut5mgwpL._SY445_.jpg"/>
+            <h3> second best</h3>
+            <p> rated pg -13 </p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/BooMadea2Poster.jpg/220px-BooMadea2Poster.jpg"/>
+            <h4> third best</h4>
+            <p> made febuary 2018</p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bd/BooMadeaHalloweenPoster.jpg/220px-BooMadeaHalloweenPoster.jpg"/>
+        @foreach(string name in Model.movienames)
+            {
+                <p> @name</p>
+            }
+
+            
+            
+    </section>
+</div>
